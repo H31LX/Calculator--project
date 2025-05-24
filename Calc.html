@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles.css">
+    <html lang="en" data-theme="dark">
+
+</head>
+<body>
+<!-- history of calculations -->
+
+<!-- History Panel -->
+<div id="history-panel">
+  <h2>History</h2>
+  <ul id="history-list"></ul>
+</div>
+
+<button id="history-toggle">☰</button>
+<!-- calculator html section-->
+    <div id="calculator">
+            <div id="display">0</div>
+            <output id="results"></output>
+            <div id="keys">
+                <button onclick="appendToDisplay('+')" class="operator-btn" >+</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('-')"class="operator-btn">-</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('*')"class="operator-btn">*</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('/')"class="operator-btn">/</button>
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <button onclick="calculate()">=</button>
+                <button onclick="clearDisplay()"class="operator-btn">C</button>
+                <button onclick="backspace()"class="operator-btn">⌫</button>
+            </div>
+            <div id="advanced-keys">
+    <button onclick="appendToDisplay('Math.sin(')">sin</button>
+    <button onclick="appendToDisplay('Math.cos(')">cos</button>
+    <button onclick="appendToDisplay('Math.tan(')">tan</button>
+    <button onclick="appendToDisplay('Math.sqrt(')">√</button>
+    <button onclick="appendToDisplay('Math.log(')">log</button>
+    <button onclick="appendToDisplay('Math.PI')">π</button>
+    <button onclick="appendToDisplay('Math.E')">e</button>
+    <button onclick="appendToDisplay(')')">)</button>
+</div>
+    </div>
+
+    <!-- end of calulator html section -->
+
+<script src="calc.js"></script>
+</body>
+</html>
